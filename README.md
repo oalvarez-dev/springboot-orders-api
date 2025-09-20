@@ -15,3 +15,22 @@
 ## Cómo correr (dev)
 ```bash
 ./mvnw spring-boot:run -Dspring-boot.run.profiles=dev
+```
+## Config
+```
+application-dev.yml: H2
+application-prod.yml: MySQL (usar env vars) 
+```
+## Tests
+JUnit 5, Mockito — ejemplos en src/test
+## Swagger
+http://localhost:8080/swagger-ui/index.html
+## **Estructura sugerida:**
+```text
+src/main/java/.../orders
+├─ controller
+├─ service
+├─ repository
+├─ model (entity/dto)
+└─config
+```
